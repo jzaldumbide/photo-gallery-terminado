@@ -1,6 +1,6 @@
 # Galería ESFOT — Ionic Angular Standalone
 
-Proyecto de las cuatro etapas: iniciar, tomar, guardar y cargar fotografías. Incluye tres pestañas e iconos registrados. No es una copia de tu carpeta local: es una implementación completa del ejercicio revisado en la conversación.
+Proyecto de las cuatro etapas: iniciar, tomar, guardar y cargar fotografías. Incluye tres pestañas e iconos registrados.
 
 ## Requisitos y versiones
 Node.js 22 LTS (22.12 o superior de la rama 22), npm y navegador con cámara. Ionic 8 + Angular 20 + Capacitor 7; package-lock.json fija las versiones instaladas. Esta versión usa `@ionic/angular/standalone` en todos los componentes. No mezclar imports con los ejemplos de Ionic 9 de la web.

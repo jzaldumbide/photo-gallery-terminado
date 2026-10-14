@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Galería ESFOT</string>
+    <string name="title_activity_main">Galería ESFOT</string>
+    <string name="package_name">ec.edu.epn.esfot.photogallery</string>
+    <string name="custom_url_scheme">ec.edu.epn.esfot.photogallery</string>
+</resources>
