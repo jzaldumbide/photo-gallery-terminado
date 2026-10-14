@@ -20,7 +20,7 @@ export class PhotoService {
   // Base64 simplifica la conversión en este ejercicio para web y nativo.
   const photo = await Camera.getPhoto({source:CameraSource.Camera,
    resultType:CameraResultType.Base64,quality:85,width:1600,
-   correctOrientation:true,saveToGallery:false});
+   correctOrientation:true,saveToGallery:true});
   if (!photo.base64String) throw new Error('La cámara no devolvió una imagen.');
   const filepath = `${crypto.randomUUID()}.${photo.format}`;
   await Filesystem.writeFile({path:filepath,directory:Directory.Data,data:photo.base64String});
