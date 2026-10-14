@@ -1,0 +1,13 @@
+<ion-header><ion-toolbar><ion-title>Galería de fotos</ion-title></ion-toolbar></ion-header>
+<ion-content>
+ <div class="intro"><h1>Tus momentos</h1><p>{{ photoService.photos().length }} fotografía(s) guardada(s)</p></div>
+ @if(message()) { <p class="mensaje" role="status">{{ message() }}</p> }
+ @if(busy()) { <p class="estado" role="status">Procesando…</p> }
+ @else if(photoService.photos().length === 0) { <div class="vacio"><h2>Tu galería está vacía</h2><p>Presiona la cámara para tomar tu primera foto.</p></div> }
+ <ion-grid><ion-row>
+ @for(photo of photoService.photos(); track photo.filepath; let position=$index) {
+  <ion-col size="6" size-md="4" size-lg="3"><img class="foto" [src]="photo.webviewPath" [alt]="'Fotografía '+(position+1)" loading="lazy" /></ion-col>
+ }
+ </ion-row></ion-grid>
+ <ion-fab vertical="bottom" horizontal="center" slot="fixed"><ion-fab-button (click)="addPhotoToGallery()" [disabled]="busy()" aria-label="Tomar fotografía"><ion-icon name="camera"></ion-icon></ion-fab-button></ion-fab>
+</ion-content>

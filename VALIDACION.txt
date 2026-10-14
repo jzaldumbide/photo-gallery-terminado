@@ -1,0 +1,4 @@
+Validación realizada: npm install y npm run build completados correctamente.
+Entorno de compilación: Node.js 24.19.0; npm 11.9.0.
+Angular verificó TypeScript y plantillas Standalone sin errores.
+La captura con una cámara real y la ejecución en Android requieren prueba en el dispositivo del usuario; no se probaron aquí.
