@@ -8,8 +8,8 @@ Node.js 22 LTS (22.12 o superior de la rama 22), npm y navegador con cámara. Io
 ## Ejecutar
 Descomprimir y abrir una terminal en esta carpeta (la que contiene package.json):
 ```bash
-npm ci
-npm start
+npm i
+ionic start
 ```
 Abrir http://localhost:4200. No ejecutar ionic start: el proyecto ya está creado. Opcional: `npm install -g @ionic/cli` y `ionic serve` (normalmente puerto 8100).
 
